@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./static/img/favicon.png" type="image/x-icon">
+    <title>我的搜索</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            overflow: hidden;
+            background: linear-gradient(135deg, #ff1e56, #ffac41, #1e90ff, #32cd32);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* 下面是其他CSS样式，保持不变 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .search-button {
+            padding: 15px 30px;
+            border: none;
+            background-color: #ff4081;
+            color: #fff;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .search-button:hover {
+            background-color: #f50057;
+        }
+
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .particle {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: #ff4081;
+            border-radius: 50%;
+            animation: float 5s linear infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0.7;
+            }
+
+            50% {
+                transform: translateY(-100vh) translateX(50vw);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-200vh) translateX(100vw);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="particles">
+        <div class="particle" style="animation-delay: 0s; left: 10%; animation-duration: 6s;"></div>
+        <div class="particle" style="animation-delay: 1s; left: 20%; animation-duration: 8s;"></div>
+        <div class="particle" style="animation-delay: 2s; left: 30%; animation-duration: 5s;"></div>
+        <div class="particle" style="animation-delay: 3s; left: 40%; animation-duration: 7s;"></div>
+        <div class="particle" style="animation-delay: 4s; left: 50%; animation-duration: 6s;"></div>
+        <div class="particle" style="animation-delay: 5s; left: 60%; animation-duration: 9s;"></div>
+        <div class="particle" style="animation-delay: 6s; left: 70%; animation-duration: 8s;"></div>
+        <div class="particle" style="animation-delay: 7s; left: 80%; animation-duration: 6s;"></div>
+        <div class="particle" style="animation-delay: 8s; left: 90%; animation-duration: 7s;"></div>
+    </div>
+    <div class="container">
+        <h1>我的搜索</h1>
+        <p>打造订阅式搜索，让我的搜索，只搜精品！</p>
+        <button class="search-button"
+            onclick="window.location.href='https://greasyfork.org/zh-CN/scripts/457020-%E6%88%91%E7%9A%84%E6%90%9C%E7%B4%A2';">前往脚本页面</button>
+    </div>
+</body>
+
+</html>
