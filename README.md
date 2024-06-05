@@ -1,5 +1,6 @@
 # 我的搜索脚本-文档
 ![License](https://img.shields.io/badge/license-MIT-yellow)
+
 我的搜索是一个可自定义内容搜索的脚本应用，比如你收集了很多的网站、软件，想要快速检索它，这也是这个脚本应用的初心！
 
 1、基本使用
