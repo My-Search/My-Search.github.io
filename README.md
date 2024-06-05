@@ -119,5 +119,6 @@ TisHub其它就是我们创建的Github仓库，用户想要提交自己的订�
 
 ![](https://cdn.jsdelivr.net/gh/18476305640/typora@master/images/2024/06/02/20240602150344767.png)
 
-
+### 10）订阅原理图解
+![](https://cdn.jsdelivr.net/gh/18476305640/typora@master/images/2024/06/05/1717589115149.png)
 
